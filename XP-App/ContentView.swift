@@ -42,12 +42,19 @@ struct SettingsView: View {
 
 struct HomeView: View {
     var body: some View {
+        
         NavigationView {
+            
             VStack {
                 
             }
+            
+        
             .navigationTitle(Text("Home"))
+            
+            
         }
+        
         
         
     }
