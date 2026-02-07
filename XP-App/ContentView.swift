@@ -15,9 +15,20 @@ struct ContentView: View {
                 .tabItem {
                     Label("Home", systemImage: "house")
                 }
+            
+            ToDoView()
+                .tabItem {
+                    Label("To Do", systemImage: "list.bullet")
+                }
+            
             SettingsView()
                 .tabItem {
                     Label("Settings", systemImage: "gear")
+                }
+           
+            ProfileView()
+                .tabItem {
+                    Label("Profile", systemImage: "person")
                 }
             
         }
@@ -27,38 +38,7 @@ struct ContentView: View {
 }
 
 
-struct SettingsView: View {
-    var body: some View {
-        NavigationView {
-            VStack {
-                
-            }
-            .navigationTitle(Text("Settings"))
-        }
-        
-        
-    }
-}
 
-struct HomeView: View {
-    var body: some View {
-        
-        NavigationView {
-            
-            VStack {
-                
-            }
-            
-        
-            .navigationTitle(Text("Home"))
-            
-            
-        }
-        
-        
-        
-    }
-}
 
 #Preview {
     ContentView()
