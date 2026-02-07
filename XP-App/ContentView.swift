@@ -9,7 +9,11 @@ import SwiftUI
 
 struct ContentView: View {
     
+                              
+    @State private var isDarkMode =
+        UserDefaults.standard.bool(forKey: "isDarkMode")
     @StateObject private var todoStore = TodoStore()
+    @State private var selectedTab: Int = 0
     
     var body: some View {
         TabView {
@@ -17,27 +21,32 @@ struct ContentView: View {
             HomeView()
                 .environmentObject(todoStore)
                 .tabItem {
-                    Label("Home", systemImage: "house")
+                    Label("Progress", systemImage: "percent")
                 }
+                .tag(0)
             
             TodoView()
                 .environmentObject(todoStore)
                 .tabItem {
-                    Label("To Do", systemImage: "list.bullet")
+                    Label("To-Hack List", systemImage: "curlybraces")
                 }
+                .tag(1)
             
-            SettingsView()
+            SettingsView(isDarkMode: $isDarkMode)
                 .tabItem {
                     Label("Settings", systemImage: "gear")
                 }
+                .tag(2)
            
             ProfileView()
                 .environmentObject(todoStore)
                 .tabItem {
                     Label("Profile", systemImage: "person")
                 }
+                .tag(3)
             
         }
+        .preferredColorScheme(isDarkMode ? .dark : .light)
     }
     
     

@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct CircularProgressView: View {
-    
+
     var progress: Double
+
     
     var body: some View {
         ZStack {
@@ -23,10 +24,15 @@ struct CircularProgressView: View {
             Circle()
                 
                 .trim(from: 0, to: progress)
-                .stroke(Color.purple, lineWidth: 10)
+                .stroke(Color.purple, lineWidth: 20)
                 .rotationEffect(.degrees(-90))
-                .animation(.easeInOut, value: progress)
+                .animation(.easeInOut(duration: 5), value: progress, )
                 .frame(width: 250, height: 250)
+            
+            Image("bytehacks11")
+                .resizable().frame(width: 100, height: 100)
+            
+                
         }
         
     }
