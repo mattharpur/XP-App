@@ -40,6 +40,7 @@
 		B3892A5F2F36CAFA0068AB60 /* XP-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "XP-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3892A6C2F36CAFB0068AB60 /* XP-AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "XP-AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3892A762F36CAFB0068AB60 /* XP-AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "XP-AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3892B012F37C7FF0068AB60 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -91,6 +92,7 @@
 				B3892A612F36CAFA0068AB60 /* XP-App */,
 				B3892A6F2F36CAFB0068AB60 /* XP-AppTests */,
 				B3892A792F36CAFB0068AB60 /* XP-AppUITests */,
+				B3892B012F37C7FF0068AB60 /* README.md */,
 				B3892A602F36CAFA0068AB60 /* Products */,
 			);
 			sourceTree = "<group>";
