@@ -16,6 +16,7 @@ struct TodoView: View {
         NavigationView {
             VStack {
                 Spacer()
+                Text("Write down your hacks and to-dos to do before submitting your project!")
                 HStack {
                     
                     //changes keybaord button to done and dissmisses keybaord
@@ -56,7 +57,7 @@ struct TodoView: View {
                         
                         
                     }
-                    
+                    .onDelete(perform: deleteTodos)
                     
                     
                 }
@@ -79,6 +80,10 @@ struct TodoView: View {
         if let index = todoStore.todos.firstIndex(where: { $0.id == todo.id }) {
             todoStore.todos[index].isCompleted.toggle()
         }
+    }
+    
+    private func deleteTodos(at offsets: IndexSet) {
+        todoStore.todos.remove(atOffsets: offsets)
     }
     
 }

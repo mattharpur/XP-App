@@ -11,20 +11,26 @@ struct ProfileView: View {
     var body: some View {
         NavigationView {
             VStack {
-                
-                Button("Login") {
-                    
+                Spacer()
+                Image("bytehacks11")
+                    .resizable().frame(width: 250, height: 250)
+                Button(action: {
                     print("tapped")
-                    
+                }) {
+                    Text("Login/Sign Up")
+                        .font(.headline)
+                        .foregroundColor(.white)
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                        .background(Color.purple)
+                        .cornerRadius(10)
                 }
-                .foregroundColor(.white)
-                .padding()
-                .background(Color.purple)
-                .cornerRadius(12)
                 
                 
+                
+                .padding(100)
+                .navigationTitle(Text("Profile"))
             }
-            .navigationTitle(Text("Profile"))
         }
     }
 }

@@ -42,7 +42,7 @@ struct HomeView: View {
                 
             }
             
-            .navigationTitle(Text("Hey Hacker!"))
+            .navigationTitle(Text("Hey UGAHacker!"))
             
         }
         

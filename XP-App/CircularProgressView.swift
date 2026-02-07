@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CircularProgressView: View {
-    
+
     var progress: Double
     
     var body: some View {
@@ -27,6 +27,10 @@ struct CircularProgressView: View {
                 .rotationEffect(.degrees(-90))
                 .animation(.easeInOut, value: progress)
                 .frame(width: 250, height: 250)
+            
+            Image("bytehacks11")
+                .resizable().frame(width: 100, height: 100)
+                
         }
         
     }
