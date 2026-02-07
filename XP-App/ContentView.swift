@@ -8,15 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @StateObject private var todoStore = TodoStore()
+    
     var body: some View {
         TabView {
             
             HomeView()
+                .environmentObject(todoStore)
                 .tabItem {
                     Label("Home", systemImage: "house")
                 }
             
-            ToDoView()
+            TodoView()
+                .environmentObject(todoStore)
                 .tabItem {
                     Label("To Do", systemImage: "list.bullet")
                 }
@@ -27,6 +32,7 @@ struct ContentView: View {
                 }
            
             ProfileView()
+                .environmentObject(todoStore)
                 .tabItem {
                     Label("Profile", systemImage: "person")
                 }

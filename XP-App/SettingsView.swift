@@ -7,13 +7,13 @@
 
 import SwiftUI
 
-struct ToDoView: View {
+struct SettingsView: View {
     var body: some View {
         NavigationView {
             VStack {
                 
             }
-            .navigationTitle(Text("To-Do"))
+            .navigationTitle(Text("Settings"))
         }
         
         
