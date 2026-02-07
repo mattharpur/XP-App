@@ -63,7 +63,7 @@ struct TodoView: View {
                 }
                 
             }
-            .navigationTitle(Text("To-Do List"))
+            .navigationTitle(Text("To-Hack List"))
         }
     }
     

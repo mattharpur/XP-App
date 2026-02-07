@@ -31,6 +31,16 @@ struct ProfileView: View {
                 .padding(100)
                 .navigationTitle(Text("Profile"))
             }
+            .background(
+                        LinearGradient(
+                            colors: [
+                                Color(red: 0.78, green: 0.70, blue: 0.95), // light purple
+                                Color(red: 0.70, green: 0.85, blue: 0.98)  // light blue
+                            ],
+                            startPoint: .top,
+                            endPoint: .bottom
+                        )
+                    )
         }
     }
 }
