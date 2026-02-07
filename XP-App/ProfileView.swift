@@ -12,10 +12,19 @@ struct ProfileView: View {
         NavigationView {
             VStack {
                 
+                Button("Login") {
+                    
+                    print("tapped")
+                    
+                }
+                .foregroundColor(.white)
+                .padding()
+                .background(Color.purple)
+                .cornerRadius(12)
+                
+                
             }
             .navigationTitle(Text("Profile"))
         }
-        
-        
-    } 
+    }
 }
